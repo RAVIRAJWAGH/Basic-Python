@@ -53,23 +53,16 @@ print(Counter(y_data))
 
 # # Feature Scalling
 
-# In[7]:
-
 
 from sklearn.preprocessing import StandardScaler
 sc=StandardScaler()
 x_data=sc.fit_transform(x_data)
 
 
-# In[8]:
-
-
 # Train test Spite
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(x_data,y_data)
 
-
-# In[9]:
 
 
 from sklearn.tree import DecisionTreeClassifier
@@ -80,8 +73,6 @@ from sklearn.metrics import accuracy_score
 accuracy=accuracy_score(y_test,y_pred)
 accuracy
 
-
-# In[ ]:
 
 
 
